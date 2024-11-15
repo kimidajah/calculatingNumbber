@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #212121;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,103 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  height: 100vh;
+}
+
+input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+button:hover {
+  background-color: #e5e5e5;
+}
+
+
+p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.navbar .navbar-brand {
+  color: #1d1d1d;
+}
+
+.navbar .nav-link {
+  color: #1d1d1d;
+}
+
+/* src/App.css */
+.App {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #1d1d1d;
+  color: #cac9c9;
+}
+
+.dark-mode .navbar .navbar-brand {
+  color: #d9d9d9;
+}
+
+.dark-mode .navbar .nav-link {
+  color: rgb(228, 228, 228);
+  background-color: #1d1d1d;
+}
+.dark-mode .navbar .icon-moon {
+  color: #1d1d1d;
+}
+
+.dark-mode h1 {
+  color: rgb(255, 255, 255);
+}
+
+/* src/App.css */
+
+/* Gaya umum */
+.number-counter {
+  margin-top: 20px;
+}
+
+/* Gaya input dan teks di mode terang */
+.number-counter .form-control {
+  background-color: rgb(222, 222, 222); /* Latar belakang putih */
+  color: rgb(42, 42, 42); /* Teks hitam */
+  
+}
+
+/* Gaya input dan teks di mode malam */
+.dark-mode .number-counter .form-control {
+  background-color: rgb(35, 35, 35); /* Latar belakang hitam */
+  color: rgb(216, 216, 216); /* Teks putih */
+}
+
+.dark-mode .result-text {
+  color: rgb(234, 231, 231); /* Teks putih di mode malam */
+}
+
+.result-text {
+  color: rgb(27, 27, 27); /* Teks hitam di mode terang */
+}
+
+.dark-mode .navbar-toggler{
+  color: rgb(234, 231, 231);
 }
